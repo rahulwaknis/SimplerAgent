@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/llordersectiondeliveries">
+
+    <TextView
+        android:id="@+id/tvordersection_uncollapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:text="This is inflated view."
+        />
+    <TextView
+        android:id="@+id/tvordersection_collapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/map"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/note"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/phone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+
+        >
+        <ImageView
+            android:id="@+id/ivdownarrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_keyboard_arrow_down_black_24dp"
+            />
+        <ImageView
+            android:id="@+id/ivuparrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_keyboard_arrow_up_black_24dp"
+            android:visibility="gone"
+            />
+        </LinearLayout>
+</LinearLayout>
